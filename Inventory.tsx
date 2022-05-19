@@ -1,6 +1,9 @@
-export default function Inventory(message) {
-  console.log(message);
-  window.Inventory = {
+import * as React from 'react';
+
+let data:object;
+export default function Inventory() {
+console.log();
+ data = {
     allSizes: (function(small, large) {
       var sizes = [];
       for (var i = small; i <= large; i++) {
@@ -59,6 +62,5 @@ export default function Inventory(message) {
       "purple" : ["9", "9.5", "10", "10.5", "11", "11.5", "12", "12.5"],
       "green" : ["8", "9", "9.5", "10", "10.5", "11", "11.5", "12", "12.5"]
     }
-  };
 }
-
+}
